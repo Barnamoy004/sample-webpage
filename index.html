@@ -8,20 +8,33 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
 
 <nav id="main-nav">
     <a class="logo">BS GROUP</a>
     <div class="nav-links">
-        <a>Home</a><a>About</a><a>Services</a><a>Contact</a>
+        <a data-target="landing">Home</a>
+        <a data-target="login">Login</a>
+        <a data-target="register">Register</a>
+        <a id="open-modal">Contact</a>
     </div>
 </nav>
 
-<section class="hero" id="landing">
-    <h1>We Build Strength That Lasts</h1>
-    <p>Your vision, our craftsmanship — from home construction to commercial spaces.</p>
-    <button class="btn" id="start">Get Started</button>
+<section class="hero slider" id="landing">
+
+    <div class="slides">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c" class="slide active">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" class="slide">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="slide">
+        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" class="slide">
+        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a" class="slide">
+    </div>
+
+    <div class="hero-content">
+        <h1>We Build Strength That Lasts</h1>
+        <p>Your vision, our craftsmanship — from home construction to commercial spaces.</p>
+        <button class="btn" id="start">Get Started</button>
+    </div>
 </section>
 
 <section class="login-hero" id="login">
@@ -38,12 +51,8 @@
             <i class="fas fa-lock"></i>
         </div>
 
-        <div class="options">
-            <label><input type="checkbox"> Remember Me</label>
-            <a>Forgot?</a>
-        </div>
-
         <button class="login-btn">Login</button>
+        <p class="hover-info">Secure login with encrypted protection 🔒</p>
 
         <div class="switch-link">
             Don't have an account? <a id="go-register">Register</a>
@@ -77,6 +86,15 @@
         </div>
     </div>
 </section>
+<div class="modal" id="modal">
+    <div class="modal-box">
+        <h2>Contact Us</h2>
+        <p>Email: bsgroup@gmail.com</p>
+        <p>Phone: +91 90000 00000</p>
+        <button id="close-modal">Close</button>
+    </div>
+</div>
+<div id="toast">Success</div>
 
 <script src="script.js"></script>
 </body>
