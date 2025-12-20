@@ -2,33 +2,38 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Login | BS GROUP</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - BS GROUP</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="login-bg">
 
-<nav class="nav-fixed">
-<a class="logo" href="index.html">BS GROUP</a>
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="register.html">Register</a>
-</div>
+<nav>
+    <div class="logo">BS GROUP</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
 </nav>
 
-<section class="page-bg fade">
-<div class="glass-box small">
-<h1>Login</h1>
-
-<input type="text" placeholder="Username">
-<input type="password" placeholder="Password">
-
-<a class="btn action full">Login</a>
-
-<p class="switch">Don’t have an account? <a href="register.html">Register</a></p>
-</div>
+<section class="login-hero">
+    <div class="form-container">
+        <h2>Login</h2>
+        <div class="input-group">
+            <input type="text" placeholder="Username">
+            <i class="fa fa-user"></i>
+        </div>
+        <div class="input-group">
+            <input type="password" placeholder="Password">
+            <i class="fa fa-lock"></i>
+        </div>
+        <button class="login-btn">Login</button>
+        <div class="switch-link">
+            Don't have an account? <a href="register.html">Register</a>
+        </div>
+    </div>
 </section>
 
-<script src="script.js"></script>
 </body>
 </html>

@@ -2,34 +2,42 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Register | BS GROUP</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - BS GROUP</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="register-bg">
 
-<nav class="nav-fixed">
-<a class="logo" href="index.html">BS GROUP</a>
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="login.html">Login</a>
-</div>
+<nav>
+    <div class="logo">BS GROUP</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
 </nav>
 
-<section class="page-bg fade">
-<div class="glass-box small">
-<h1>Register</h1>
-
-<input type="text" placeholder="Full Name">
-<input type="email" placeholder="Email">
-<input type="password" placeholder="Password">
-
-<a class="btn action full">Create Account</a>
-
-<p class="switch">Already registered? <a href="login.html">Login</a></p>
-</div>
+<section class="register-hero">
+    <div class="form-container">
+        <h2>Register</h2>
+        <div class="input-group">
+            <input type="text" placeholder="Full Name">
+            <i class="fa fa-user"></i>
+        </div>
+        <div class="input-group">
+            <input type="email" placeholder="Email">
+            <i class="fa fa-envelope"></i>
+        </div>
+        <div class="input-group">
+            <input type="password" placeholder="Password">
+            <i class="fa fa-lock"></i>
+        </div>
+        <button class="register-btn">Create Account</button>
+        <div class="switch-link">
+            Already have an account? <a href="login.html">Login</a>
+        </div>
+    </div>
 </section>
 
-<script src="script.js"></script>
 </body>
 </html>
